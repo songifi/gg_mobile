@@ -1,74 +1,50 @@
-# Gasless Gossip Mobile
+# Welcome to your Expo app 👋
 
-A StarkNet-powered messaging app that lets you chat and send tokens without gas fees.
+This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
-## Features
+## Get started
 
-- Message friends and groups with end-to-end encryption
-- Send tokens within conversations
-- Gasless transactions via StarkNet Layer 2
-- React to messages, share media, and more
+1. Install dependencies
 
-## Quick Start
+   ```bash
+   npm install
+   ```
 
-### Prerequisites
+2. Start the app
 
-- Node.js 16+
-- Expo CLI (`npm install -g expo-cli`)
-- Expo Go app on your device or emulator
+   ```bash
+    npx expo start
+   ```
 
-### Setup
+In the output, you'll find options to open the app in a
 
-1. Clone the repository
+- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
+- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
+- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
+- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+
+You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+
+## Get a fresh project
+
+When you're ready, run:
+
 ```bash
-git clone https://github.com/yourusername/gasless-gossip-mobile.git
-cd gasless-gossip-mobile
+npm run reset-project
 ```
 
-2. Install dependencies
-```bash
-npm install
-# or
-yarn install
-```
+This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
 
-3. Start the development server
-```bash
-npx expo start
-```
+## Learn more
 
-4. Scan the QR code with Expo Go app or run on simulator
+To learn more about developing your project with Expo, look at the following resources:
 
-## Environment Setup
+- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
+- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
 
-Create a `.env` file:
-```
-API_URL=https://api.gaslessgossip.com
-STARKNET_NETWORK=goerli
-```
+## Join the community
 
-## Tech Stack
+Join our community of developers creating universal apps.
 
-- React Native with Expo
-- TypeScript
-- Expo Router for navigation
-- Redux Toolkit for state management
-- StarkNet.js for blockchain interactions
-- Socket.io Client for real-time messaging
-
-## Project Structure
-
-```
-src/
-├── app/           # Expo Router screens
-├── components/    # Reusable UI components
-├── services/      # API and blockchain services
-├── store/         # Redux state management
-├── hooks/         # Custom React hooks
-└── utils/         # Helper functions
-```
-
-
-## License
-
-MIT
+- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
+- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
