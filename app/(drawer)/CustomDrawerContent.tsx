@@ -58,71 +58,71 @@ export default function CustomDrawerContent(props: any) {
         </View>
         <DrawerItem
           label={"Home"}
-          onPress={() => router.push("/(drawer)/(tabs)")}
+          onPress={() => router.push("/")}
           labelStyle={{
             color: isActiveRoute("/") ? "#665CFF" : "#000",
           }}
           icon={(props) => (
             <Feather
               name="home"
-              size={props.size}
+              size={typeof props.size === 'number' ? props.size : 24}
               color={isActiveRoute("/") ? "#665CFF" : props.color}
             />
           )}
         />
         <DrawerItem
-          label={"Courses"}
+          label={"NFTs"}
           labelStyle={{
-            color: isActiveRoute("/courses") ? "#665CFF" : "#000",
+            color: isActiveRoute("/NFTs") ? "#665CFF" : "#000",
           }}
-          onPress={() => router.push("/(drawer)/(tabs)/courses")}
+          onPress={() => router.push("/NFTs")}
           icon={(props) => (
-            <Feather
-              name="book-open"
-              size={props.size}
-              color={isActiveRoute("/courses") ? "#665CFF" : props.color}
+            <Ionicons
+              name="cube-outline"
+              size={typeof props.size === 'number' ? props.size : 24}
+              color={isActiveRoute("/NFTs") ? "#665CFF" : props.color}
             />
           )}
         />
         <DrawerItem
-          label={"Messages"}
+          label={"Chats"}
           labelStyle={{
-            color: isActiveRoute("/messages") ? "#665CFF" : "#000",
+            color: isActiveRoute("/chats") ? "#665CFF" : "#000",
           }}
-          onPress={() => router.push("/(drawer)/(tabs)/messages")}
+          onPress={() => router.push("/chats")}
           icon={(props) => (
             <AntDesign
               name="message1"
-              size={props.size}
-              color={isActiveRoute("/messages") ? "#665CFF" : props.color}
+              size={typeof props.size === 'number' ? props.size : 24}
+              color={isActiveRoute("/chats") ? "#665CFF" : props.color}
             />
           )}
         />
         <DrawerItem
-          label={"Resources"}
-          onPress={() => router.push("/(drawer)/(tabs)/resources")}
+          label={"Wallet"}
           labelStyle={{
-            color: isActiveRoute("/resources") ? "#665CFF" : "#000",
+            color: isActiveRoute("/wallet") ? "#665CFF" : "#000",
           }}
+          onPress={() => router.push("/wallet")}
           icon={(props) => (
-            <Ionicons
-              name="document-text-outline"
-              size={props.size}
-              color={isActiveRoute("/resources") ? "#665CFF" : props.color}
+            <Feather
+              name="credit-card"
+              size={typeof props.size === 'number' ? props.size : 24}
+              color={isActiveRoute("/wallet") ? "#665CFF" : props.color}
             />
           )}
         />
         <DrawerItem
           label={"Profile"}
-          onPress={() => router.push("/(drawer)/(tabs)/profile")}
+          onPress={() => router.push("/Profile")}
           labelStyle={{
-            color: isActiveRoute("/profile") ? "#665CFF" : "#000",
+            color: isActiveRoute("/Profile") ? "#665CFF" : "#000",
           }}
           icon={(props) => (
             <Octicons
               name="person"
-              size={props.size}
-              color={isActiveRoute("/profile") ? "#665CFF" : props.color}
+              size={typeof props.size === 'number' ? props.size : 24}
+              color={isActiveRoute("/Profile") ? "#665CFF" : props.color}
             />
           )}
         />
@@ -144,7 +144,7 @@ export default function CustomDrawerContent(props: any) {
         }}
         onPress={async () => {
           await AsyncStorage.removeItem("loggedIn");
-          router.push("/(routes)/onboarding");
+          router.push("/onboarding");
         }}
       >
         <MaterialIcons name="logout" size={24} color="black" />

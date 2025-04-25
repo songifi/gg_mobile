@@ -12,7 +12,7 @@ export default function Layout() {
       >
         <Drawer.Screen
           name="(tabs)"
-          options={{ headerShown: true, headerTitle: "" }}
+          options={{ headerShown: false }}
         />
       </Drawer>
     </GestureHandlerRootView>
