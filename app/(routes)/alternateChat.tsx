@@ -96,9 +96,7 @@ export default function AlternateChat() {
                 <View style={styles.tokenHeader}>
                   <View style={styles.tokenLogoContainer}>
                     <Image
-                      source={{
-                        uri: "https://cryptologos.cc/logos/starknet-strk-logo.png",
-                      }}
+                      source={require("@/assets/images/strkIcon.png")}
                       style={styles.tokenLogo}
                       resizeMode="contain"
                     />
@@ -203,7 +201,7 @@ const styles = StyleSheet.create({
     fontSize: 12,
   },
   messageText: {
-    fontSize: 16,
+    fontSize: 12,
   },
   mytimeText: {
     fontSize: 10,
@@ -219,7 +217,7 @@ const styles = StyleSheet.create({
   },
   tokenContainer: {
     alignSelf: "flex-end",
-    marginVertical: 18,
+    // marginVertical: 18,
     padding: 15,
     borderRadius: 10,
     maxWidth: "80%",
@@ -234,25 +232,27 @@ const styles = StyleSheet.create({
     marginRight: 8,
   },
   tokenLogo: {
-    width: 24,
-    height: 24,
-    borderRadius: 12,
+    width: 16,
+    height: 16,
   },
   tokenName: {
-    fontSize: 16,
-    color: "#4A4A4A",
-    fontWeight: "500",
+    fontSize: 10,
+    color: "#5A5B5C",
+    fontWeight: 400,
   },
   tokenAmount: {
     fontSize: 40,
-    fontWeight: "bold",
-    color: "#006400",
-    marginBottom: 5,
+    fontWeight: 600,
+    color: "#0B501E",
+    marginHorizontal: 12,
+    marginTop: 12,
+    textAlign: "center",
   },
   tokenSubAmount: {
-    fontSize: 16,
-    color: "#4A4A4A",
-    marginBottom: 5,
+    fontSize: 12,
+    color: "#5A5B5C",
+    marginBottom: 30,
+    textAlign: "center",
   },
   sendText: {
     fontSize: 20,

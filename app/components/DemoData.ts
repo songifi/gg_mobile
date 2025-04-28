@@ -358,3 +358,75 @@ export const nftData = [
     image: require("@/assets/images/nft-2.png"),
   },
 ];
+
+export const currencies = [
+  { code: "USD", name: "US Dollar", flag: "https://flagcdn.com/w20/us.png" },
+  { code: "EUR", name: "Euro", flag: "https://flagcdn.com/w20/eu.png" },
+  {
+    code: "GBP",
+    name: "British Pound",
+    flag: "https://flagcdn.com/w20/gb.png",
+  },
+  { code: "JPY", name: "Japanese Yen", flag: "https://flagcdn.com/w20/jp.png" },
+  { code: "CNY", name: "Chinese Yuan", flag: "https://flagcdn.com/w20/cn.png" },
+  {
+    code: "AUD",
+    name: "Australian Dollar",
+    flag: "https://flagcdn.com/w20/au.png",
+  },
+  {
+    code: "CAD",
+    name: "Canadian Dollar",
+    flag: "https://flagcdn.com/w20/ca.png",
+  },
+  { code: "CHF", name: "Swiss Franc", flag: "https://flagcdn.com/w20/ch.png" },
+  { code: "INR", name: "Indian Rupee", flag: "https://flagcdn.com/w20/in.png" },
+  {
+    code: "BRL",
+    name: "Brazilian Real",
+    flag: "https://flagcdn.com/w20/br.png",
+  },
+];
+
+export const transactions = [
+  {
+    id: 1,
+    title: "Xaxxo just sent you some STRK",
+    date: "15 March, 2025 • 12:43 PM",
+    amount: "+400 USD",
+    tokens: "10,654 STRK",
+    icon: "celebration",
+    iconType: "material",
+    positive: true,
+  },
+  {
+    id: 2,
+    title: "Bet placed",
+    date: "15 March, 2025 • 12:43 PM",
+    amount: "-400 USD",
+    tokens: "10,654 STRK",
+    icon: "arrow-up-right",
+    iconType: "feather",
+    positive: false,
+  },
+  {
+    id: 3,
+    title: "Wallet Funded",
+    date: "15 March, 2025 • 12:43 PM",
+    amount: "+400 USD",
+    tokens: "10,654 STRK",
+    icon: "plus",
+    iconType: "feather",
+    positive: true,
+  },
+  {
+    id: 4,
+    title: "Xaxxo just sent you a NFT",
+    date: "15 March, 2025 • 12:43 PM",
+    amount: "+400 USD",
+    tokens: "10,654 STRK",
+    icon: "diamond",
+    iconType: "fontawesome",
+    positive: true,
+  },
+];

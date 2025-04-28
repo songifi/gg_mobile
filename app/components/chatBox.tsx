@@ -17,34 +17,34 @@ import {
 } from "react-native";
 import { chatMessages } from "./DemoData";
 
-export default function ChatBox() {
-  const modalContent = [
-    {
-      id: 1,
-      image: require("@/assets/images/starkIcon.png"),
-      title: "STRK",
-      pressAction: "/(routes)/sendStrk",
-    },
-    {
-      id: 2,
-      title: "NFTs",
-      icon: <FontAwesome name="diamond" color={"#0B501E"} size={20} />,
-      pressAction: "/(routes)/sendStrk",
-    },
-    {
-      id: 3,
-      title: "Camera",
-      icon: <FontAwesome6 name="camera" color="#0B501E" size={20} />,
-      pressAction: "/(routes)/sendStrk",
-    },
-    {
-      id: 4,
-      title: "Photo",
-      icon: <MaterialIcons name="photo" color="#0B501E" size={20} />,
-      pressAction: "/(routes)/sendStrk",
-    },
-  ];
+const modalContent = [
+  {
+    id: 1,
+    image: require("@/assets/images/starkIcon.png"),
+    title: "STRK",
+    pressAction: "/(routes)/sendStrk",
+  },
+  {
+    id: 2,
+    title: "NFTs",
+    icon: <FontAwesome name="diamond" color={"#0B501E"} size={20} />,
+    pressAction: "/(routes)/sendStrk",
+  },
+  {
+    id: 3,
+    title: "Camera",
+    icon: <FontAwesome6 name="camera" color="#0B501E" size={20} />,
+    pressAction: "/(routes)/sendStrk",
+  },
+  {
+    id: 4,
+    title: "Photo",
+    icon: <MaterialIcons name="photo" color="#0B501E" size={20} />,
+    pressAction: "/(routes)/sendStrk",
+  },
+];
 
+export default function ChatBox() {
   const [modalVisible, setModalVisible] = useState(false);
   const navigation = useNavigation();
   const [input, setInput] = useState("");
@@ -98,7 +98,7 @@ export default function ChatBox() {
                     style={styles.modalItem}
                     onPress={() => {
                       if (item.pressAction) {
-                        router.push(item.pressAction as `/${string}`);
+                        router.push("/(routes)/sendStrk");
                       }
                       setModalVisible(false);
                     }}

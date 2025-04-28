@@ -159,7 +159,8 @@ const styles = StyleSheet.create({
     fontSize: 12,
   },
   messageText: {
-    fontSize: 16,
+    fontSize: 12,
+    color: "#121212",
   },
   mytimeText: {
     fontSize: 10,

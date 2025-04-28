@@ -69,6 +69,34 @@ export default function RootLayout() {
             name="(routes)/sendStrk"
             options={{ headerShown: false }}
           />
+          <Stack.Screen
+            name="(routes)/walletQrCode"
+            options={{ headerShown: false }}
+          />
+          <Stack.Screen
+            name="(routes)/fundWallet"
+            options={{ headerShown: false }}
+          />
+          <Stack.Screen
+            name="(routes)/fromOtherChains"
+            options={{ headerShown: false }}
+          />
+          <Stack.Screen
+            name="(routes)/sendViaChat"
+            options={{ headerShown: false }}
+          />
+          <Stack.Screen
+            name="(routes)/sendMoney"
+            options={{ headerShown: false }}
+          />
+          <Stack.Screen
+            name="(routes)/sendToWallet"
+            options={{ headerShown: false }}
+          />
+          <Stack.Screen
+            name="(routes)/fundFromStark"
+            options={{ headerShown: false }}
+          />
         </Stack>
       </ThemeProvider>
     </GestureHandlerRootView>

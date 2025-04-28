@@ -201,12 +201,7 @@ export default function SendScreen() {
                 style={styles.keypadButton}
                 onPress={handleBackspace}
               >
-                <Entypo
-                  name="chevron-left"
-                  size={18}
-                  color="#08090A"
-                  onPress={() => navigation.goBack()}
-                />
+                <Entypo name="chevron-left" size={18} color="#08090A" />
               </TouchableOpacity>
             </View>
           </View>
@@ -217,7 +212,11 @@ export default function SendScreen() {
       {activeTab === "NFT" && (
         <View style={styles.nftContainer}>
           <View style={styles.nftHeader}>
-            <TouchableOpacity>
+            <TouchableOpacity
+              onPress={() => {
+                setActiveTab("STRK");
+              }}
+            >
               <Text style={styles.cancelButton}>Cancel</Text>
             </TouchableOpacity>
             <Text style={styles.nftTitle}>Your NFTs (24)</Text>

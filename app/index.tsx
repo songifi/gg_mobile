@@ -13,8 +13,7 @@ export default function Index() {
   return showSplash ? (
     <SplashScreenView />
   ) : (
-    // <Redirect href="/(routes)/onboarding" />
-    <Redirect href="/(drawer)/(tabs)/chats" />
+    <Redirect href="/(routes)/onboarding" />
   );
   // --- END OVERRIDE ---
   // return <Redirect href="/(drawer)/(tabs)" />;
